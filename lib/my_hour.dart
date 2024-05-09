@@ -72,14 +72,18 @@ class MyHour extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: Center(
-                      child: Container(
-                        padding: const EdgeInsets.all(5.0),
-                        decoration: const BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                    child: const Center(
+                      child: Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Text(
+                          textAlign: TextAlign.center,
+                          'ساعات التطوع',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30.0,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                        child: const Text('ساعات التطوع'),
                       ),
                     ),
                   ),
@@ -103,14 +107,18 @@ class MyHour extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: Center(
-                      child: Container(
-                        padding: const EdgeInsets.all(5.0),
-                        decoration: const BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                    child: const Center(
+                      child: Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Text(
+                          textAlign: TextAlign.center,
+                          'بياناتي',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30.0,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                        child: const Text('بياناتي'),
                       ),
                     ),
                   ),
@@ -134,14 +142,18 @@ class MyHour extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: Center(
-                      child: Container(
-                        padding: const EdgeInsets.all(5.0),
-                        decoration: const BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                    child: const Center(
+                      child: Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Text(
+                          textAlign: TextAlign.center,
+                          'الدعم',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30.0,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                        child: const Text('الدعم'),
                       ),
                     ),
                   ),
@@ -165,14 +177,18 @@ class MyHour extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: Center(
-                      child: Container(
-                        padding: const EdgeInsets.all(5.0),
-                        decoration: const BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                    child: const Center(
+                      child: Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: Text(
+                          textAlign: TextAlign.center,
+                          'مكان التطوع',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30.0,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                        child: const Text('مكان التطوع'),
                       ),
                     ),
                   ),

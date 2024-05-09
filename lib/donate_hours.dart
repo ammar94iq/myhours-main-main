@@ -16,133 +16,16 @@ class DonateHours extends StatelessWidget {
             ),
           ),
           padding: const EdgeInsets.all(20.0),
-          child: ListView(
-            physics: const BouncingScrollPhysics(),
+          child: Column(
             children: [
+              const Spacer(),
               Image.asset(
                 'images/logo.png',
                 height: MediaQuery.of(context).size.width / 3.0,
                 width: MediaQuery.of(context).size.width / 3.0,
               ),
               const SizedBox(height: 10.0),
-
-              Row(
-                children: [
-                  Expanded(
-                    child: Image.asset(
-                      'images/chart.png',
-                    ),
-                  ),
-                  Expanded(
-                    child: Column(
-                      children: [
-                        const Center(
-                          child: Text(
-                            'الساعات المنجزة',
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 18.0),
-                          ),
-                        ),
-                        const SizedBox(height: 5.0),
-                        Container(
-                          height: 20,
-                          width: MediaQuery.of(context).size.width / 2,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10.0),
-                            color: const Color.fromARGB(255, 82, 164, 232),
-                          ),
-                          child: Stack(
-                            clipBehavior: Clip.none,
-                            children: [
-                              AnimatedPositioned(
-                                top: 0,
-                                duration: const Duration(seconds: 1),
-                                child: Container(
-                                  height: 20,
-                                  width: MediaQuery.of(context).size.width / 3,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.0),
-                                    color: const Color(0xFF5ECBB6),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(height: 10.0),
-                        const Center(
-                          child: Text(
-                            'الساعات المتبقية',
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 18.0),
-                          ),
-                        ),
-                        const SizedBox(height: 5.0),
-                        Container(
-                          height: 20,
-                          width: MediaQuery.of(context).size.width / 2.0,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10.0),
-                            color: const Color.fromARGB(255, 82, 164, 232),
-                          ),
-                          child: Stack(
-                            clipBehavior: Clip.none,
-                            children: [
-                              AnimatedPositioned(
-                                top: 0,
-                                duration: const Duration(seconds: 1),
-                                child: Container(
-                                  height: 20,
-                                  width: MediaQuery.of(context).size.width / 5,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.0),
-                                    color: const Color(0xFF5ECBB6),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(height: 10.0),
-                        const Center(
-                          child: Text(
-                            'عدد الايام المتبقية',
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 18.0),
-                          ),
-                        ),
-                        const SizedBox(height: 5.0),
-                        Container(
-                          height: 20,
-                          width: MediaQuery.of(context).size.width / 2.0,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10.0),
-                            color: const Color.fromARGB(255, 82, 164, 232),
-                          ),
-                          child: Stack(
-                            clipBehavior: Clip.none,
-                            children: [
-                              AnimatedPositioned(
-                                top: 0,
-                                duration: const Duration(seconds: 1),
-                                child: Container(
-                                  height: 20,
-                                  width: MediaQuery.of(context).size.width / 4,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.0),
-                                    color: const Color(0xFF5ECBB6),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-
+              const Spacer(),
               const SizedBox(height: 20.0),
               const Text(
                 'ادخال ساعات التطوع',
@@ -192,6 +75,7 @@ class DonateHours extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20.0),
+
               // Submit Button
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
@@ -204,6 +88,7 @@ class DonateHours extends StatelessWidget {
                   style: TextStyle(fontSize: 18.0),
                 ),
               ),
+              const Spacer(),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.grey),
                 onPressed: () {

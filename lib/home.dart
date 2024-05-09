@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'donate_hours.dart';
 import 'my_hour.dart';
+import 'settings.dart';
+import 'single_hours.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -12,7 +13,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int selectedIndex = 0;
-  List<Widget> widgetPages = const [Welcome(), MyHour(), DonateHours()];
+  List<Widget> widgetPages = const [MyHour(), MySingleHours(), Settings()];
   @override
   Widget build(BuildContext context) {
     return Directionality(
@@ -34,32 +35,9 @@ class _HomeState extends State<Home> {
             items: const [
               BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
               BottomNavigationBarItem(icon: Icon(Icons.timer_sharp), label: ''),
-              BottomNavigationBarItem(icon: Icon(Icons.analytics), label: ''),
+              BottomNavigationBarItem(icon: Icon(Icons.settings), label: ''),
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class Welcome extends StatelessWidget {
-  const Welcome({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage("images/bg.jpeg"),
-          fit: BoxFit.fill,
-        ),
-      ),
-      padding: const EdgeInsets.all(20.0),
-      child: const Center(
-        child: Text(
-          "مرحبا بك",
-          style: TextStyle(color: Colors.white, fontSize: 30.0),
         ),
       ),
     );
