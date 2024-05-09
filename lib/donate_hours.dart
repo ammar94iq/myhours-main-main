@@ -84,7 +84,7 @@ class DonateHours extends StatelessWidget {
                 ),
                 onPressed: () {},
                 child: const Text(
-                  'تحميل PDF',
+                  'ادخال الساعات',
                   style: TextStyle(fontSize: 18.0),
                 ),
               ),
